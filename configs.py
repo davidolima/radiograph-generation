@@ -26,7 +26,7 @@ class Configs:
             self.sample_interval = 400
 
         elif self.model == 'wgan-gp':
-            self.checkpoint_save_file_name += ' ' + self.model
+            self.checkpoint_save_file_name += '-' + self.model
             self.latent_dim = 100
             self.img_size = 224
             self.channels = 3
